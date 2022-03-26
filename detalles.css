@@ -1,6 +1,40 @@
 body {
     margin: 0%;
   }
+  .infoArt {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "nombreL nombreV"
+      "edadL edadV"
+      "ocupL ocupV";
+  }
+  .infoArt .infoLabel {
+    font-size: 10pt;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    text-decoration: underline;
+    text-transform: uppercase;
+    text-decoration: darkcyan;
+    font-style: oblique;
+  }
+  #nombreLabel {
+    grid-area: nombreL;
+  }
+  #nombreValue {
+    grid-area: nombreV;
+  }
+  #edadLabel {
+    grid-area: edadL;
+  }
+  #edadValue {
+    grid-area: edadV;
+  }
+  #ocupLabel {
+    grid-area: ocupL;
+  }
+  #ocupValue {
+    grid-area: ocupV;
+  }
 .article{
     display:flex;
     flex-direction: row;
