@@ -1,41 +1,43 @@
 body {
-    margin: 0%;
-  }
-  .infoArt {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas:
-      "nombreL nombreV"
-      "edadL edadV"
-      "ocupL ocupV";
-  }
-  .infoArt .infoLabel {
-    font-size: 10pt;
-    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-    text-decoration: underline;
-    text-transform: uppercase;
-    text-decoration: darkcyan;
-    font-style: oblique;
-  }
-  #nombreLabel {
-    grid-area: nombreL;
-  }
-  #nombreValue {
-    grid-area: nombreV;
-  }
-  #edadLabel {
-    grid-area: edadL;
-  }
-  #edadValue {
-    grid-area: edadV;
-  }
-  #ocupLabel {
-    grid-area: ocupL;
-  }
-  #ocupValue {
-    grid-area: ocupV;
-  }
-.article{
+  margin: 0%;
+}
+
+.infoArt {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "nombreL nombreV"
+    "edadL edadV"
+    "ocupL ocupV";
+}
+
+.infoArt .infoLabel {
+  font-size: 10pt;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-decoration: underline;
+  text-transform: uppercase;
+  text-decoration: darkcyan;
+  font-style: oblique;
+}
+#nombreLabel {
+  grid-area: nombreL;
+}
+#nombreValue {
+  grid-area: nombreV;
+}
+#edadLabel {
+  grid-area: edadL;
+}
+#edadValue {
+  grid-area: edadV;
+}
+#ocupLabel {
+  grid-area: ocupL;
+}
+#ocupValue {
+  grid-area: ocupV;
+}
+.content{
     display:flex;
     flex-direction: row;
     justify-content: center;
@@ -43,7 +45,7 @@ body {
     flex-wrap: wrap;
     margin:20px;
 }
-.article .card {
+.content .card {
   width: 50px;
   height: 50px;
   background-color: aquamarine;
@@ -54,13 +56,14 @@ body {
   align-items: center;
   margin:10px;
 }
-.article .card a{
+.content .card a{
   text-decoration: none;
   color: floralwhite;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-size: 10px;
 }
-.article .card a:hover{
+.content .card a:hover{
     color:blue;
     font-weight: bolder;
 }
+
