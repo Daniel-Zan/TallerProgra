@@ -1,5 +1,6 @@
 body {
   margin: 0%;
+  background-color: burlywood;
 }
 
 .infoArt {
@@ -14,13 +15,41 @@ body {
 }
 
 .infoArt .infoLabel {
-  font-size: 10pt;
+  font-size: 8pt;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   text-decoration: underline;
   text-transform: uppercase;
   text-decoration: darkcyan;
   font-style: oblique;
 }
+.col{
+float: right;
+border: 5px solid darkblue;
+  width: 5px;
+  margin: 5%;
+  padding: 5%;
+}
+.col1{
+  float: left;
+  border: 5px solid darkblue;
+    width: 10px;
+    margin: 5%;
+    padding: 5%;
+  }
+  .container{
+    float: left;
+    border: 5px solid darkblue;
+      width: 10px;
+      margin: 5%;
+      padding: 5%;
+
+    }.container1{
+      float: right;
+      border: 5px solid darkblue;
+        width: 10px;
+        margin: 5%;
+        padding: 5%;
+      }
 #nombreValue {
   grid-area: nombreV;
 }
