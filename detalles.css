@@ -6,9 +6,11 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-areas:
-    "nombreL nombreV"
-    "edadL edadV"
-    "ocupL ocupV";
+    "nombreV apelV"
+    "edadV"
+    "dirV ciudadV paisV"
+    "telefL telefV"
+    "emailL emailV";
 }
 
 .infoArt .infoLabel {
@@ -19,50 +21,33 @@ body {
   text-decoration: darkcyan;
   font-style: oblique;
 }
-#nombreLabel {
-  grid-area: nombreL;
-}
 #nombreValue {
   grid-area: nombreV;
 }
-#edadLabel {
-  grid-area: edadL;
+#apellidoValue {
+  grid-area: apelV;
 }
 #edadValue {
   grid-area: edadV;
 }
-#ocupLabel {
-  grid-area: ocupL;
+#direccionValue {
+  grid-area: dirV;
 }
-#ocupValue {
-  grid-area: ocupV;
+#ciudadValue {
+  grid-area: ciudadV;
 }
-.content{
-    display:flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    margin:20px;
+#paisValue {
+  grid-area: paisV;
 }
-.content .card {
-  width: 50px;
-  height: 50px;
-  background-color: aquamarine;
-  border: 1px solid firebrick;
-  box-shadow: 1px 1px 1px 1px #000;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin:10px;
+#telefonoLabel {
+  grid-area: telefL;
 }
-.content .card a{
-  text-decoration: none;
-  color: floralwhite;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  font-size: 10px;
+#telefonoValue{
+  grid-area: telefV;
 }
-.content .card a:hover{
-    color:blue;
-    font-weight: bolder;
+#emailLabel{
+  grid-area: emailL;
+}
+#emailValue{
+  grid-area: emailV;
 }
